@@ -20,7 +20,7 @@ setInterval(function(){
     $("#parkingMeterTable").DataTable().ajax.reload(null, false);
 }, 10000);
 
-// Testing
+// Testingasdasdas
 //  ==================== SIDE DASHLETS ====================
 // TOTAL VACANT SLOTS
 function countSlots(){
