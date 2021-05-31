@@ -1,0 +1,36 @@
+
+@media(max-width:1440px){
+    .page-content{padding: 40px 32px;}
+    #admin-dashboard #bay-stats-dashlet{border-right: none; margin-bottom: 25px;}
+    #admin-dashboard .col{flex: none;}
+    #admin-dashboard .overall-tot-con .item{flex-grow: 1; text-align: center;}
+    #admin-dashboard .park_r{margin-bottom: 20px;}
+    #admin-dashboard .park_f{margin-left: 0!important;}
+}
+@media(max-width:1024px){
+
+    #parking-meter .col{flex: none;width:100%; justify-content: space-between;}
+    #parkingMeterTable i:not(th:last-child i), 
+    #manageUsersTable i:not(th:last-child i), 
+    #manageParkingTable i:not(th:last-child i){display: none;}
+
+    #pmeter_dashlet, #mng_users_dashlet, .mng_parking_areas_dashlet{display: flex;text-align: center;}
+    #pmeter_dashlet .card, #mng_users_dashlet .card, .mng_parking_areas_dashlet .card{flex-grow: 1; margin:0!important;}
+
+    .card-content{padding-left: 0;}
+    .card-content::before{display: block;width: 87px;margin: auto;position: initial!important;}
+    
+    .mng_parking_areas_dashlet{margin-bottom: 0!important;}
+}
+
+
+@media(max-width:768px){
+    .page-content{margin-left: 0;}
+}
+
+@media(max-width:767px){
+    .sidebar{display: none;}
+    .page-content{display: none;}
+    .restrictSmallScrns{display: block!important;position:absolute; top: 50%;transform: translateY(-50%);left: 0;right: 0;}
+    .hamburger-icon{display: none;}
+}

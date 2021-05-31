@@ -1,0 +1,229 @@
+/* GLOBAL */
+body{background: #EEEDEB;}
+
+.owl-carousel{z-index: 0;}
+.btn-green{background: #00A876; border-color: #00A876; color:#fff;}
+.btn-dark{background: #151A22; border-color: #151A22;}
+
+select option{color:#000;}
+
+table{width: 100%!important;}
+
+.form-label{font-weight: 600;}
+
+.modal-header, .card{box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);}
+
+/* BOOTSTRAP MODAL */
+.fade {transition: opacity .15s!important;}
+
+/* BOOTSTRAP POPOVER */
+.popover-body{padding: 0.2rem 1rem; color: #fff;background: red;}
+.bs-popover-auto[data-popper-placement^=left]>.popover-arrow::after, .bs-popover-start>.popover-arrow::after{border-left-color: red; bottom: 4px;}
+.bs-popover-auto[data-popper-placement^=right]>.popover-arrow::after, .bs-popover-end>.popover-arrow::after{border-right-color:red; bottom: 4px;}
+.bs-popover-auto[data-popper-placement^=bottom]>.popover-arrow::after, .bs-popover-bottom>.popover-arrow::after{border-bottom-color: red; bottom: 4px;}
+.bs-popover-auto[data-popper-placement^=top]>.popover-arrow::after, .bs-popover-top>.popover-arrow::after{border-top-color: red; bottom: 4px;}
+
+.tooltip-inner{background: red;}
+
+footer{text-align: center; margin-top: 100px;}
+h1,h2,h3,h4,h5,h6, p{margin:0;padding:0}
+/*  REGISTER PAGE */
+.reg-col{background: linear-gradient(to bottom left, #151A22 80%, #198754 100%);}
+.reg-col h2{color: #fff;}
+.reg-col h3{color: #fff;}
+.reg-col h6{color: #c3c3c3;}
+.reg-col hr{background: #8A8D91;}
+.reg-col p{color: rgba(255, 255, 255, 0.9);}
+.reg-col .reglink{text-decoration: underline;color:#fff; cursor: pointer;}
+.reg-col .reglink:hover{color:#00A876}
+.reg-col .cancel-btn{background:transparent; border-color: #00A876; color: #00A876;}
+.reg-col .cancel-btn:hover{border-color:#fff}
+.reg-col .regbtn{background: #00A876; color: #fff;}
+.reg-col .regbtn:hover{border-color:#fff}
+
+
+/*  LOGIN PAGE */
+.login-col-2{background: linear-gradient(to bottom right, #151A22 80%, #198754 100%);}
+.login-col-2 .form-control{color: #fff;background-color: transparent;}
+.login-col-2 .form-control:focus {color: #fff;background-color: transparent;}
+
+.input-icons i {position: absolute; top: 4px;}
+.input-icons {margin-bottom: 10px; position: relative; width: 100%;}
+.icon {padding: 10px;color: #6C757D; min-width: 50px;text-align: center;}
+.input-field {padding: 10px;text-align: center;}
+
+.login-col-2 hr{background: #fff;}
+.login-col-2 h3, .login-col-2 label, .login-col-2 span, .login-col-2 a{color: #fff;}
+.login-col-2 a{text-decoration: underline;}
+.login-col-2 a:hover{color: #151A22;}
+.login-col-2 .btn{background:transparent; border-color: #fff;}
+.login-col-2 .btn:hover{border-color: #198754;}
+
+
+/* .reg-form{background: #00A876;}
+.reg-form hr{background: #fff;}
+.reg-form h3, .reg-form label, .reg-form span, .reg-form a{color: #fff;}
+.reg-form a{text-decoration: underline;}
+.reg-form a:hover{color: #151A22;}
+.reg-form .btn{background:#151A22; border-color: #151A22;}
+.reg-form .btn:hover{border-color: #fff;} */
+
+
+
+#custom-nav{background: #151A22;padding:5px 0;position: fixed;right: 0;left: 0;z-index: 1;top: 0;}
+#custom-nav .dropdown-toggle{color: #fff;}
+
+.navbar-brand span{color: #00A876;}
+.navbar-brand img{width: 50px;}
+
+.current-page{background: gray!important}
+.current-page{color: #fff!important;}
+
+/* SIDEBAR */
+.toggleSidebar {position: absolute;right: 16px;top: 5px;cursor: pointer;}
+
+
+.sidebar{background: linear-gradient(to bottom right, #151A22 80%, #198754 100%); height:100%; width:265px; position: fixed;top:0;bottom:0; z-index: 2; box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);}
+
+.sidebar-container{max-width:254px; width:100%;margin:0 auto;}
+
+.sidebar-brand{display:block;}  
+.sidebar-brand:hover{text-decoration: none;}
+.sidebar-brand span{color: #00A876;}
+.sidebar-brand img{width: 57px;}
+
+.sidebar-user-info{padding:24px 18px}
+.prof-avatar img{width:50px;border-radius:50%}
+.prof-name{color: #fff;padding-left: 18px;}
+
+
+.sidebar-list{margin:0; padding:0}
+.sidebar-label{margin:20px 0 0;}
+
+.sidebar-list li{list-style:none;margin: 5px 0;}
+.sidebar-list li a:hover{background: gray;color: #fff;}
+.sidebar-list li a{color: #b2bbcc; display: block;text-decoration: none;padding: 7px 0 7px 10px;position: relative; cursor: pointer;}
+.sidebar-list li a i{background: #31353D; padding: 5px;border-radius: 5px;margin-right: 12px;}
+
+.sidebar-list-item a::after{font-family: "Font Awesome 5 Free";font-weight: 900;content: "\f105";font-style: normal;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;text-align: center;background: 0 0;position: absolute;right: 15px;top: 8px}
+
+.sidebar-list-item-has-child a::after{font-family: "Font Awesome 5 Free";font-weight: 900;content: "\f107";font-style: normal;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;text-align: center;background: 0 0;position: absolute;right: 15px;top: 8px}
+.sidebar-list-item-has-child .nav-toggle li a::after{font-family: "Font Awesome 5 Free";font-weight: 900;content: "\f105";font-style: normal;display: inline-block;font-style: normal;font-variant: normal;text-rendering: auto;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;text-align: center;background: 0 0;position: absolute;right: 15px;top: 8px}
+
+
+.page-content{margin-top:40px; margin-left: 265px; padding: 40px 88px;}
+
+.row{margin:0}
+
+.bay-stats .card{width: 32%;margin: 0 9px;}
+.bay-stats .card:first-child{margin-left: 0;}
+.bay-stats .card:last-child{margin-right: 0;}
+
+
+/* HAS ERROR */
+.has-error{border-color: #E70303!important; box-shadow: 0 0 0 0.25rem rgb(231 3 3 / 25%);}
+.has-error:focus{border-color: #E70303!important; box-shadow: 0 0 0 0.25rem rgb(231 3 3 / 25%);}
+
+/* HAS SUCCESS */
+.has-success{border-color: #198754; box-shadow: 0 0 0 0.25rem rgb(25 135 84 / 25%)}
+
+
+
+/* DASHBOARD */
+
+#bay-stats-container{padding: 20px 20px; padding: 20px 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); background: #fff;}
+
+#admin-dashboard #bay-stats-dashlet{border-right: 1px inset #bfbdb9; padding-right: 44px;}
+
+.doughnut-text { top: 52%; left: 50%; transform: translate(-50%, -50%);}
+.doughnut-text p:first-child {font-size: 30px;}
+.doughnut-text p:last-child {font-size: 14px;}
+
+
+
+.card-content{position: relative; padding-left: 90px; color: #000;}
+.card-content span{font-weight: 600;}
+
+
+/* MANAGE USERS */
+.online-users-box .card-content::before{content: '\f205'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: rgb(10, 109, 10); background: rgba(10, 109, 10,.1); border-radius: 50%; padding: 0 10px;}
+.active-users-box .card-content::before{content: '\f4fc'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 34px; left: 0; top:0;color: #198754; background: rgba(25,135,84,.1); border-radius: 50%; padding: 6px 15px;}
+.deactivated-users-box .card-content::before{content: '\f235'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 34px; left: 0; top:0;color: rgb(206, 12, 12); background: rgba(206,12,12,.1); border-radius: 50%; padding: 6px 15px;}
+.total-users-box .card-content::before{content: '\f0c0'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 34px; left: 0; top:0; color:#0D6EFD; background: rgba(13,110,253,.1); border-radius: 50%; padding: 6px 15px;}
+
+
+.mngUserDelDeactForm .form-check-input:checked{background-color: red; border-color: red;}
+.mngUserDelDeactForm .form-check-input:checked[type=radio]{background-image:none}
+
+
+/* MANAGE PARKING AREAS */
+.totPAreas .card-content::before{content: '\f5fd'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #163F33; background: rgba(22,63,51,.1); border-radius: 50%; padding: 0 10px;}
+.activeParkingAreas .card-content::before{content: '\f35b'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #0A6D0A; background: #E6F0E6; border-radius: 50%; padding: 0 10px;}
+.deactivatedParkingAreas .card-content::before{content: '\f358'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #CE0C0C; background: #FAE6E6; border-radius: 50%; padding: 0 10px;}
+
+.totPSlots4W .card-content::before{content: '\f1b9'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #0D6EFD; background: #E6F0FF; border-radius: 50%; padding: 0 10px;}
+.totPSlots2W .card-content::before{content: '\f21c'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #0D6EFD; background: #E6F0FF; border-radius: 50%; padding: 0 10px;}
+.overallPSlots .card-content::before{content: '\f540'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 42px; left: 0; top:0; color: #0D6EFD; background: #E6F0FF; border-radius: 50%; padding: 0px 15px;}
+
+
+/* PARKING METER */
+.pMeterTotSlots .card-content::before{content: '\f018'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #151A22; background: #E7E7E8; border-radius: 50%; padding: 0 10px;}
+.pMeter4WSlotStat .card-content::before{content: '\f1b9'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 43px; left: 0; top:0; color: #151A22; background: #E7E7E8; border-radius: 50%; padding: 0 10px;}
+.pMeter2WSlotStat .card-content::before{content: '\f21c'; font-family: "Font Awesome 5 Free"; position: absolute; font-weight: 900; font-size: 37px; left: 0; top:0; color: #151A22; background: #E7E7E8; border-radius: 50%; padding: 5px 11px;}
+
+
+
+
+
+
+
+.vhType .card-body label {cursor: pointer;}
+
+
+
+
+
+
+
+/* PRINT */
+
+@media screen {
+    #printSection{
+        display: none;
+    }
+  }
+
+@page { size: auto;  margin: 0mm;}
+
+@media print {
+
+  html, body {
+    text-align: center;
+    height:100%; 
+    overflow: hidden;
+    zoom: 130%;
+    align-items: center;
+    margin: auto;
+    vertical-align: middle;
+  }
+  body * {
+    visibility:hidden;
+  }
+ 
+  #printSection, #printSection *{
+    visibility:visible;
+  }
+  #printSection {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    left:0;
+    right:0;
+    position: absolute;
+    padding: 10px 20px;
+    bottom: 0;
+    top:0;
+  	vertical-align: middle;
+  }
+ 
+}
