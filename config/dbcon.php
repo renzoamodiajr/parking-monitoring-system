@@ -2,23 +2,14 @@
 
 class DatabaseConnection{
    
-   //Get Heroku ClearDB connection information
-   private $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-   private $cleardb_server = $this->cleardb_url["host"];
-   private $cleardb_username = $this->cleardb_url["user"];
-   private $cleardb_password = $this->cleardb_url["pass"];
-   private $cleardb_db = substr($this->cleardb_url["path"],1);
-   public $active_group = 'default';
-   public $query_builder = TRUE;
-   
-   // private $host = $this->cleardb_server;
-   // private $dbname = $this->cleardb_db;
-   // private $username = $this->cleardb_username;
-   // private $password = $this->cleardb_password;
+   private $host = 'us-cdbr-east-04.cleardb.com';
+   private $dbname = 'heroku_fed7d30855c5d5f';
+   private $username = 'b234051e92c132';
+   private $password = 'a9ed2f24';
   
    public function connectDb(){
       try {
-         $pdo = new PDO("mysql:host=".$this->cleardb_server.";dbname=".$this->cleardb_db."", $this->cleardb_username, $this->cleardb_password);
+         $pdo = new PDO("mysql:host=".$this->host.";dbname=".$this->dbname."", $this->username, $this->password);
          $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
          return $pdo;
       } catch (PDOException $e) {
