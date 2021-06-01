@@ -38,7 +38,7 @@ function showToastMsg(toastMsg){
 
 
 // NAVIGATION HAS CHILD TOGGLE
-$(".sidebar-list").click(function(){
+$(".sidebar-list-item-has-child").click(function(){
     $(".nav-toggle", this).slideToggle('slow');
 });
 

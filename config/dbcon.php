@@ -2,10 +2,10 @@
 
 class DatabaseConnection{
    
-   private $host = 'us-cdbr-east-04.cleardb.com';
-   private $dbname = 'heroku_fed7d30855c5d5f';
-   private $username = 'b234051e92c132';
-   private $password = 'a9ed2f24';
+   private $host = 'localhost';
+   private $dbname = 'parkingmonitoring';
+   private $username = 'root';
+   private $password = '';
   
    public function connectDb(){
       try {
