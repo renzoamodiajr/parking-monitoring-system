@@ -5,7 +5,7 @@ class DatabaseConnection{
    private $host = 'localhost';
    private $dbname = 'parkingmonitoring';
    private $username = 'root';
-   private $password = '123456';
+   private $password = '';
   
    public function connectDb(){
       try {
