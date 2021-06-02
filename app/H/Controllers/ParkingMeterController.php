@@ -12,11 +12,14 @@ class ParkingMeter extends DatabaseConnection{
             $stmt->bindParam(':areaID', $data['areaID']);
             $stmt->execute();
             foreach($stmt->fetchAll(PDO::FETCH_ASSOC) as $row){
+                
+                $explodeDuration = explode(':', $row['duration']);
+                $dur = $explodeDuration[0].'hr '.$explodeDuration[1].'min';
                 $subArr = array();
                 $subArr[] = $row['plate_num'];
                 $subArr[] = $row['vehicle_type'];
                 $subArr[] = $row['time_check_in'];
-                $subArr[] = $row['duration'];
+                $subArr[] = $dur;
                 $subArr[] = '₱'.$row['parking_rate'];
                 $subArr[] = '<button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#checkOutModal'.$row['transactionID'].'"><i class="fas fa-arrow-circle-up"></i></button>
                             <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#rePrintTicketModal'.$row['transactionID'].'"><i class="fas fa-print"></i></button>';
@@ -93,7 +96,7 @@ class ParkingMeter extends DatabaseConnection{
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
             $dateIn = Date('Y-m-d');
             $timeIn = Date('H:i');
-            $stmt = $this->connectDb()->prepare("INSERT INTO parking_transaction VALUES (default, :userID, :parking_info_id, :plate_num, :vehicle_type, :date_in, :time_check_in, default, default, default, default)");
+            $stmt = $this->connectDb()->prepare("INSERT INTO parking_transaction VALUES (default, :userID, :parking_info_id, :plate_num, :vehicle_type, :date_in, :time_check_in, '', default, default, default)");
             $stmt->bindParam(":userID", $data['userID']);
             $stmt->bindParam(":parking_info_id", $data['areaID']);
             $stmt->bindParam(":plate_num", $data['plateNum']);

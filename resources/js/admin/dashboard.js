@@ -10,8 +10,8 @@ function slotStatFreqRevDashlet(){
         success: function(jsonResponse){
             
             let data = JSON.parse(jsonResponse);
-            $("#vacPerc").html(((data.totVacSlots / data.totSlots) * 100) + "%");
-            $("#occupPerc").html(((data.totOccupSlots / data.totSlots) * 100) + "%");
+            $("#vacPerc").html(((data.totVacSlots / data.totSlots) * 100).toFixed(0) + "%");
+            $("#occupPerc").html(((data.totOccupSlots / data.totSlots) * 100).toFixed(0) + "%");
             $("#totSlotTxt").html(data.totSlots);
             $("#totRevTxt").html(data.totRev);
             $("#totFreqTxt").html(data.totFreq);
@@ -280,10 +280,10 @@ function yearlyDynamicReport(){
 
             // ############## YEARLY PARKING REVENUE ##############
 
-            let revDataLen = data.totYearlyFreq.length;
+            let revDataLen = data.totYearlyRev.length;
             let revData = [];
             for(let i=0; i<revDataLen; i++){
-                revData.push(data.totYearlyFreq[i]);
+                revData.push(data.totYearlyRev[i]);
             }
 
             let yearlyDynamicRepREVData = {
@@ -319,10 +319,10 @@ function yearlyDynamicReport(){
             
             // ############## YEARLY PARKING FREQUENCY ##############
 
-            let freqDataLen = data.totYearlyRev.length;
+            let freqDataLen = data.totYearlyFreq.length;
             let freqData = [];
             for(let j=0; j<freqDataLen; j++){
-                freqData.push(data.totYearlyRev[j]);
+                freqData.push(data.totYearlyFreq[j]);
             }
 
             let yearlyDynamicRepFREQData = {

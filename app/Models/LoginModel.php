@@ -1,6 +1,6 @@
 <?php
 
-require_once '../Http/Controllers/LoginController.php';
+require_once '../H/Controllers/LoginController.php';
 
 
 if(isset($_POST['loginUserTrigger']) == true){

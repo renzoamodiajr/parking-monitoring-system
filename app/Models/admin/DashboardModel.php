@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../Http/Controllers/admin/DashboardController.php';
+require_once '../../H/Controllers/admin/DashboardController.php';
 
 
 if(isset($_POST['slotStatFreqRevDashletTrig']) == true){

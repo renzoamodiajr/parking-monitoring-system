@@ -1,6 +1,85 @@
 /* GLOBAL */
+*{
+  margin:0;
+  padding:0;
+}
+html, body{height: 100%; width: 100%;}
 body{background: #EEEDEB;}
 
+#login-page{
+  background-image: url(../images/login-bg-1.jpg);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: right;
+}
+#login-con{
+  height: 100%;
+  width:100%;
+  max-width: 512px;
+  position: relative;
+  background: #000;
+}
+
+#loginForm{
+  position: absolute;
+  width: 100%;
+  top: 41%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  padding: 29px;
+}
+#loginForm .form-group{
+  margin-bottom: 21px;
+}
+#loginErr{
+  display: none;
+  margin: 20px auto;
+  font-size: 0.9rem;
+}
+#loginForm input, #loginForm input:focus{
+  background-color: transparent;
+  color:#fff;
+}
+#loginForm input:focus{
+  border: 1px solid #fff;
+  box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
+}
+
+.logo-con{
+  text-align: center;
+}
+
+#loginBtn{
+  background: #088871;
+  border-color: #088871;
+}
+#loginBtn:hover{
+  background: #1BB99F;
+  border-color: #1BB99F;
+}
+#loginBtn:focus{
+  box-shadow: 0 0 0 0.25rem rgb(27 185 159 / 50%);
+}
+
+#loginFooter{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  color: #c3c3c3;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+}
+#loginFooter p:nth-child(2){
+  padding: 0 16px;
+  position: relative;
+}
+
+#loginFooter p:nth-child(2)::before{
+  
+}
 .owl-carousel{z-index: 0;}
 .btn-green{background: #00A876; border-color: #00A876; color:#fff;}
 .btn-dark{background: #151A22; border-color: #151A22;}

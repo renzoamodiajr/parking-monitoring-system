@@ -18,7 +18,7 @@ function pMeterTable(){
 pMeterTable();
 setInterval(function(){
     $("#parkingMeterTable").DataTable().ajax.reload(null, false);
-}, 10000);
+}, 4500);
 
 // Testingasdasdas
 //  ==================== SIDE DASHLETS ====================

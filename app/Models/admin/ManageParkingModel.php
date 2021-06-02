@@ -1,6 +1,6 @@
 <?php
 
-require_once '../../Http/Controllers/admin/ManageParkingController.php';
+require_once '../../H/Controllers/admin/ManageParkingController.php';
 
 
 if(isset($_POST['fetchParkingAreasTrigger']) == true){
