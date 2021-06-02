@@ -1,5 +1,8 @@
 $(document).on("click", "#loginBtn", function(){
- 
+    $("#loginUsername").css({'border-color':'initial', 'box-shadow':'initial'});
+    $("#loginPass").css({'border-color':'initial', 'box-shadow':'initial'});
+
+
     $("#loginErr").css({'display':'none'});
     let loginUsername = $('#loginUsername').val();
     let loginPass = $('#loginPass').val();
@@ -34,8 +37,8 @@ $(document).on("click", "#loginBtn", function(){
                 if(success == 'fail'){
                     
                     setTimeout(function(){
-                        $("#loginUsername").attr('disabled', false).css({'border-color':'#E70303', 'box-shadow':'0 0 0 0.25rem rgb(231 3 3 / 25%)'});;
-                        $("#loginPass").attr('disabled', false).val("").css({'border-color':'#E70303', 'box-shadow':'0 0 0 0.25rem rgb(231 3 3 / 25%)'});;
+                        $("#loginUsername").attr('disabled', false).css({'border-color':'#E70303', 'box-shadow':'0 0 0 0.25rem rgb(231 3 3 / 25%)'});
+                        $("#loginPass").attr('disabled', false).val("").css({'border-color':'#E70303', 'box-shadow':'0 0 0 0.25rem rgb(231 3 3 / 25%)'});
                         $("#loginBtn").html('Login');
                         $("#loginErr").css({'display':'block'});
                     }, 2000);

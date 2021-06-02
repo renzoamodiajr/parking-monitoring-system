@@ -45,6 +45,14 @@ body{background: #EEEDEB;}
   border: 1px solid #fff;
   box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
 }
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active
+{
+ -webkit-text-fill-color: #fff;
+ -webkit-box-shadow: 0 0 0 30px #000 inset !important;
+}
 
 .logo-con{
   text-align: center;
@@ -70,16 +78,26 @@ body{background: #EEEDEB;}
   color: #c3c3c3;
   font-size: 14px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-bottom: 10px;
 }
 #loginFooter p:nth-child(2){
   padding: 0 16px;
   position: relative;
+  border-right: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
 }
 
+/* #loginFooter p:nth-child(2)::before{
+  content: "|";
+  position: absolute;
+
+}
 #loginFooter p:nth-child(2)::before{
   
-}
+} */
+
+
 .owl-carousel{z-index: 0;}
 .btn-green{background: #00A876; border-color: #00A876; color:#fff;}
 .btn-dark{background: #151A22; border-color: #151A22;}

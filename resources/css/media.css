@@ -1,5 +1,7 @@
 
 @media(max-width:1440px){
+    #login-page{background-position: 326px;}
+
     .page-content{padding: 40px 32px;}
     #admin-dashboard #bay-stats-dashlet{border-right: none; margin-bottom: 25px;}
     #admin-dashboard .col{flex: none;}
@@ -8,6 +10,10 @@
     #admin-dashboard .park_f{margin-left: 0!important;}
 }
 @media(max-width:1024px){
+    #login-page{background-size: cover;background-position: center;}
+    #login-con{max-width: 400px;}
+    #loginFooter{display: block;}
+    #loginFooter p:nth-child(2){padding:0; border: none;}
 
     #parking-meter .col{flex: none;width:100%; justify-content: space-between;}
     #parkingMeterTable i:not(th:last-child i), 
@@ -25,10 +31,15 @@
 
 
 @media(max-width:768px){
+    #login-con{max-width: 363px;}
     .page-content{margin-left: 0;}
 }
 
 @media(max-width:767px){
+    #login-page{background: #EEEDEB;}
+    #login-con{display: none;}
+
+
     .sidebar{display: none;}
     .page-content{display: none;}
     .restrictSmallScrns{display: block!important;position:absolute; top: 50%;transform: translateY(-50%);left: 0;right: 0;}

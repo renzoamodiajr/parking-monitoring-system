@@ -19,9 +19,9 @@
     </div>
 
     <footer id="loginFooter">
-        <p>&#169; Copyright 2021</p>
+        <p>&#169; 2021 Copyright</p>
         <p>LORENZO N. AMODIA JR</p>
-        <p>All rights reserved.</p>
+        <p>All rights reserved</p>
     </footer>
 </div>
 
