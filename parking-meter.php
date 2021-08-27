@@ -38,10 +38,10 @@ if(empty($_SESSION['name'])){
                     ?>
             </main>
         </div>
-
-        <div class="card restrictSmallScrns" style="display: none;"><div class="card-body text-center"><h4 class="text-danger">YOU SHOULD NOT BE HERE DUDE!</h4><p></p></div></div>
+        
     </div>
         
+    
     <?php include_once 'resources/views/toastMsg.php'; ?>     
     <?php include_once 'includes/js_links.php' ?>
     <script src="resources/js/parking-meter.js"></script>

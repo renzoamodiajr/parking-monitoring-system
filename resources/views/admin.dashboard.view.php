@@ -48,7 +48,7 @@
 
 <h2 class="mt-5 text-center">Month of <?php echo $currentMonth; ?></h2>
 <div class="row justify-content-between mt-3">
-    <h3 class="pb-3">Weekly Report</h3>
+    <h3 class="pb-3">Weekly Report <span style="font-size:17px; display:none">(Collecting of datas will start every first monday of the month)</span></h3>
     <div class="card col me-5 park_r">
         <h5 class="mt-3">Parking Revenue</h5>
         <div class="card-body">

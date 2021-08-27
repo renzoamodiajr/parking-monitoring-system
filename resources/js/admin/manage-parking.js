@@ -103,8 +103,14 @@ $(document).on('click', '#addnewParkingAreaBtn', function(){
                     
                     setTimeout(function(){
                         $("#newParkingAreaModal").modal('hide');
+                        $('#addnewParkingAreaBtn').html('ADD');
+                        $("#newAreaNameInput").val("");
+                        $("#new4WSlotinput").val(0);
+                        $("#new2WSlotinput").val(0);
+                        $(".authenticate_action").hide();
+                        $("#adminAuthenticate").val("");
+
                         showToastMsg('New Parking Area has been added');
-                        tr.css({'outline': 0, 'box-shadow': '0 0 0 0.55rem rgb(25 135 84 / 25%)'});
                     }, 2000);
                     setTimeout(function(){
                         $('#manageParkingTable').DataTable().ajax.reload();
@@ -224,6 +230,7 @@ $(document).on('click', '.confirm-mp-btn', function(){
                         
                         setTimeout(function(){
                             $("#manageParkingModal" + id).modal('hide');
+                            fetchPAreasForPMeter();
                             showToastMsg(response.areaName + ' area has been deactivated');
                             tr.css({'outline': 0, 'box-shadow': '0 0 0 0.55rem rgb(25 135 84 / 25%)'});
                         }, 2000);
@@ -269,6 +276,7 @@ $(document).on('click', '.confirm-mp-btn', function(){
                     if(response.statusCode == 200){
                         
                         setTimeout(function(){
+                            fetchPAreasForPMeter();
                             $("#manageParkingModal" + id).modal('hide');
                             showToastMsg(response.areaName + ' area has been reactivated');
                             tr.css({'outline': 0, 'box-shadow': '0 0 0 0.55rem rgb(25 135 84 / 25%)'});
@@ -315,6 +323,7 @@ $(document).on('click', '.confirm-mp-btn', function(){
                     if(response.statusCode == 200){
                         
                         setTimeout(function(){
+                            fetchPAreasForPMeter();
                             $("#manageParkingModal" + id).modal('hide');
                             showToastMsg(response.areaName + ' area has been deleted');
                             tr.css({'outline': 0, 'box-shadow': '0 0 0 0.55rem rgb(25 135 84 / 25%)'});

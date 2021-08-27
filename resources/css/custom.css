@@ -45,10 +45,10 @@ body{background: #EEEDEB;}
   border: 1px solid #fff;
   box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%);
 }
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active
+#loginForm input:-webkit-autofill,
+#loginForm input:-webkit-autofill:hover, 
+#loginForm input:-webkit-autofill:focus, 
+#loginForm input:-webkit-autofill:active
 {
  -webkit-text-fill-color: #fff;
  -webkit-box-shadow: 0 0 0 30px #000 inset !important;

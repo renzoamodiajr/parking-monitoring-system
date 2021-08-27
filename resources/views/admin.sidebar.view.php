@@ -36,7 +36,7 @@
         </div>
         <ul class="sidebar-list sidebar-list-actions">
             <li class="sidebar-list-item">
-                <a href="manage-users.php"><i class="fas fa-users"></i> Manage Users</a>
+                <a href="manage-users.php" disabled><i class="fas fa-users"></i> Manage Users</a>
             </li>
             <li class="sidebar-list-item">
                 <a href="manage-parking.php"><i style="font-style: normal;font-weight: bold;padding: 5px 10px;">P</i> Manage Parking</a>

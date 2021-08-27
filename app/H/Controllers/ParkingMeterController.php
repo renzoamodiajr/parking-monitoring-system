@@ -13,13 +13,11 @@ class ParkingMeter extends DatabaseConnection{
             $stmt->execute();
             foreach($stmt->fetchAll(PDO::FETCH_ASSOC) as $row){
                 
-                $explodeDuration = explode(':', $row['duration']);
-                $dur = $explodeDuration[0].'hr '.$explodeDuration[1].'min';
                 $subArr = array();
                 $subArr[] = $row['plate_num'];
                 $subArr[] = $row['vehicle_type'];
                 $subArr[] = $row['time_check_in'];
-                $subArr[] = $dur;
+                $subArr[] = $row['duration'];
                 $subArr[] = '₱'.$row['parking_rate'];
                 $subArr[] = '<button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#checkOutModal'.$row['transactionID'].'"><i class="fas fa-arrow-circle-up"></i></button>
                             <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#rePrintTicketModal'.$row['transactionID'].'"><i class="fas fa-print"></i></button>';
@@ -34,9 +32,9 @@ class ParkingMeter extends DatabaseConnection{
                 $explode = explode(':', $duration);
                 $minDuration = ($explode[0]*60) + ($explode[1]);
                 $rate = round($minDuration * 0.33);
-
+                $dur = $explode[0].'hr '.$explode[1].'min';
                 $upd = $this->connectDb()->prepare("UPDATE parking_transaction SET duration = :duration, parking_rate = :rate WHERE plate_num = :plateNum AND time_checked_out = '' AND transactionID = :transactID");
-                $upd->bindParam(":duration", $duration);
+                $upd->bindParam(":duration", $dur);
                 $upd->bindParam(":rate", $rate);
                 $upd->bindParam(":plateNum", $plate_num);
                 $upd->bindParam(":transactID", $row['transactionID']);

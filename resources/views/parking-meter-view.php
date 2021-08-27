@@ -40,7 +40,7 @@
                 <button class="btn btn-success btn-sm me-2" data-bs-toggle="modal" data-bs-target="#checkInModal"><i class="fas fa-arrow-circle-down"></i> CHECK-IN</button>
             </div>
             <div class="pb-4">
-                <h5 class="my-2"><i class="fas fa-stopwatch-20"></i> Parking Meter</h5>
+                <h5 class="my-2"><i class="fas fa-stopwatch-20"></i> Parking Meter <span class="badge bg-success">₱20/hr rate</span></h5>
             </div>
             
             <table class="table table-bordered" id="parkingMeterTable">
@@ -95,7 +95,7 @@
       <div class="modal-body py-5">
         <div class="form-group input-icons mb-3">
             <i class="fas fa-id-card" style="top: 11px;left: 13px;"></i>
-            <input type="text" class="form-control"  id="plateNum" placeholder="Enter Plate number" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="This field is required" style="padding-left: 47px; text-transform:uppercase">
+            <input type="text" class="form-control" autocomplete="off" id="plateNum" placeholder="Enter Plate number" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="This field is required" style="padding-left: 47px; text-transform:uppercase">
         </div>
         <div class="row">
             <div class="form-check form-check-inline card col vhType" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Please select vehicle type">

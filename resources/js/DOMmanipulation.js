@@ -30,6 +30,8 @@ function toggleSidebar(value){
 }
 
 
+
+
 // POP-UP TOAST MESSAGE
 function showToastMsg(toastMsg){
     $("#myToastMsg").fadeIn('slow').delay(3500).fadeOut('slow');
@@ -68,11 +70,15 @@ $(document).on('click', '.modal-opt', function(){
 
 // ---------------------- ADDING PARKING AREAS ----------------------
 $(document).on('keyup', '.mangeParkingInput', function(){
-    if($('#newAreaNameInput').val() != "" && $("#new4WSlotinput").val() != "" || $("#new2WSlotinput").val() != ""){
-        $(".authenticate_action").show();
-    }else{
-        $(".authenticate_action").hide();
-        $("#addnewParkingAreaBtn").hide();
+    if($('#newAreaNameInput').val() != ""){
+        if($("#new4WSlotinput").val() != 0 || $("#new2WSlotinput").val() != 0){
+            if($("#new4WSlotinput").val() != "" && $("#new2WSlotinput").val() != ""){
+                $(".authenticate_action").show();
+            }else{
+                $(".authenticate_action").hide();
+                $("#addnewParkingAreaBtn").hide();
+            }
+        }
     }
 })
 

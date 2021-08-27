@@ -19,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="card col me-4 totPAreas">
+    <div class="card col totPAreas">
         <div class="card-body">
             <div class="card-content">
                 <span class="mb-2">Total Parking Areas</span>
@@ -46,7 +46,7 @@
             </div>
         </div>
     </div>
-    <div class="card col me-4 overallPSlots">
+    <div class="card col overallPSlots">
         <div class="card-body">
             <div class="card-content">
                 <span class="mb-2">Overall Parking Slots</span>
@@ -120,7 +120,7 @@
             <div class="col">
                 <div class="form-group mb-3 4Wfield">
                     <label class="form-label">Slot quantity</label>
-                    <input type="number" class="form-control mangeParkingInput" id="new4WSlotinput" placeholder="Enter slot qty for 4 wheelers">
+                    <input type="number" class="form-control mangeParkingInput" value="0" id="new4WSlotinput" placeholder="Enter slot qty for 4 wheelers">
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
             <div class="col">
                 <div class="form-group mb-3 4Wfield">
                     <label class="form-label">Slot quantity</label>
-                    <input type="number" class="form-control mangeParkingInput" id="new2WSlotinput" placeholder="Enter slot qty for 2 wheelers">
+                    <input type="number" class="form-control mangeParkingInput" value="0" id="new2WSlotinput" placeholder="Enter slot qty for 2 wheelers">
                 </div>
             </div>
         </div>

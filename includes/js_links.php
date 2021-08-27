@@ -39,3 +39,4 @@
 
 
 <script src="resources/js/printElement.js"></script>
+<script src="resources/js/browser-checker.js"></script>

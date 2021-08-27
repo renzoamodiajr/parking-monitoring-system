@@ -19,10 +19,6 @@ if(!empty($_SESSION['name'])){
 
 
   <?php include "resources/views/login.view.php"; ?>
-    
-
-
-<div class="card restrictSmallScrns" style="display: none;"><div class="card-body text-center"><h4 class="text-danger">YOU SHOULD NOT BE HERE DUDE!</h4><p></p></div></div>
-    <?php include_once 'includes/js_links.php' ?>
+ <?php include_once 'includes/js_links.php' ?>
 </body>
 </html>

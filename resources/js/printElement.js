@@ -38,6 +38,6 @@ function printElement(elem) {
     window.print();
 }
 
-window.onafterprint = function(){
-    window.location.reload(true);
-}
+// window.onafterprint = function(){
+//     window.location.reload(true);
+// }

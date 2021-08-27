@@ -34,14 +34,3 @@
     #login-con{max-width: 363px;}
     .page-content{margin-left: 0;}
 }
-
-@media(max-width:767px){
-    #login-page{background: #EEEDEB;}
-    #login-con{display: none;}
-
-
-    .sidebar{display: none;}
-    .page-content{display: none;}
-    .restrictSmallScrns{display: block!important;position:absolute; top: 50%;transform: translateY(-50%);left: 0;right: 0;}
-    .hamburger-icon{display: none;}
-}

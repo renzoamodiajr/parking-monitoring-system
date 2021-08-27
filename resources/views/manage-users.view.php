@@ -1,17 +1,9 @@
 <!-- ======================== DON'T REMOVE ============================= -->
-<input type="hidden" value="<?php echo $_SESSION['userID']; ?>" id="adminID">
+ <input type="hidden" value="<?php echo $_SESSION['userID']; ?>" id="adminID"> 
 <!-- ============================ END ================================= -->
 
 <div class="d-flex flex-row justify-content-between" id="mng_users_dashlet">
-    <div class="card col online-users-box">
-        <div class="card-body">
-            <div class="card-content">
-                <span class="mb-2">Online Users</span>
-                <h2 class="fw-bold" id="onlineUsers">XXX</h2>
-            </div>
-        </div>
-    </div>
-    <div class="card col me-4 ms-4 active-users-box">
+    <div class="card col me-4 active-users-box">
         <div class="card-body">
             <div class="card-content">
                 <span class="mb-2">Active Users</span>
@@ -27,7 +19,7 @@
             </div>
         </div>
     </div>
-    <div class="card col me-4 ms-4 total-users-box">
+    <div class="card col ms-4 total-users-box">
         <div class="card-body">
             <div class="card-content">
                 <span class="mb-2">Total Users</span>

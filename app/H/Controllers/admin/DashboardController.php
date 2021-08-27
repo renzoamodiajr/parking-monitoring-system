@@ -35,7 +35,7 @@ class DashboardController extends DatabaseConnection{
 
             echo json_encode(
                     array(
-                        'totSlots' => $totSlots['totSlots'],
+                        'totSlots' => ($totSlots['totSlots'] + 0),
                         'totOccupSlots' => $totOccupSlots['totOccupSlots'],
                         'totVacSlots' => $totSlots['totSlots'] - $totOccupSlots['totOccupSlots'],
                         'totRev' => ($totRev['totRev'] + 0),
@@ -48,8 +48,8 @@ class DashboardController extends DatabaseConnection{
 
     public function weeklyDynamicReport(){
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            
-            $firstMonday = new DateTime('first Monday of this month');
+            $currMonth = date('M');
+            $firstMonday = new DateTime('First monday of ' . $currMonth);
 
             $getDaysOFWeeks = array();
             
